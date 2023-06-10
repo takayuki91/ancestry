@@ -1,0 +1,9 @@
+<div class="category_list">
+  <div class="parents_list">
+    <% @parents.each do |parent| %>
+      <%= link_to "#{parent.name}", root_path, class: "parent_category", id: "#{parent.id}" %>
+    <% end %>
+  </div>
+  <div class="children_list"></div>
+  <div class="grand_children_list"></div>
+</div>
